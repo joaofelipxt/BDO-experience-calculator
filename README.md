@@ -1,2 +1,2 @@
 # BDO-experience-calculator
-A quick way to discover how much experience and time you need.
+A quick way to discover how much experience and time do you need.
