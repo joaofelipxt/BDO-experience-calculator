@@ -1,6 +1,6 @@
 # GitHub Pages
 
-< LINK REPOSITORIO >
+< https://github.com/joaofelipxt/BDO-experience-calculator >
 
 # Checkist
 
