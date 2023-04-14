@@ -28,3 +28,26 @@ button.addEventListener("mouseout", function() {
 function signUp() {
   window.location.href = "../sign-up/sign-up.html";
 }
+
+
+function exibirMensagem() {
+  const confirma = confirm("Welcome to your Black Desert Calculator! You must be at least 12 years old to use this site.");
+
+  if (confirma) {
+    const age = prompt("How old are you?");
+    if (age >= 12) {
+      alert("Enjoy!");
+    }
+    else {
+      alert("Sorry, you must be at least 12 years old to use this site.");
+      window.location.href = "";
+    }
+  } 
+  else {
+    alert("You need to confirm your age!");
+    window.location.href = "";
+  }
+}
+
+setTimeout(exibirMensagem, 750);
+
