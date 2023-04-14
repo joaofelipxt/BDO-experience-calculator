@@ -10,4 +10,14 @@ function login() {
     } else {
       alert("Nome de usuário ou senha inválidos. Tente novamente.");
     }
-  }
+}
+
+const botao = document.getElementById("login-btn");
+botao.addEventListener("mouseover", function() {
+  botao.style.backgroundColor = "red";
+  botao.style.color = "white";
+});
+botao.addEventListener("mouseout", function() {
+  botao.style.backgroundColor = "blue";
+  botao.style.color = "white";
+});
