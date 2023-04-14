@@ -94,6 +94,13 @@ input::placeholder {
     top: 400px;
 }
 
+.btn {
+    background-color: black;
+    color: #687A50;
+    font-family: Cinzel Decorative;
+    font-weight: bold;
+}
+
 .sign-up-button {
     position: absolute;
     width: 81px;

@@ -12,12 +12,19 @@ function login() {
     }
 }
 
-const botao = document.getElementById("login-btn");
-botao.addEventListener("mouseover", function() {
-  botao.style.backgroundColor = "red";
-  botao.style.color = "white";
+/* const button = document.getElementById("login-btn");
+const originalButton = button.style.cssText;
+
+button.addEventListener("mouseover", function() {
+  button.style.backgroundColor = "orange";
+  button.style.color = "black";
 });
-botao.addEventListener("mouseout", function() {
-  botao.style.backgroundColor = "blue";
-  botao.style.color = "white";
-});
+button.addEventListener("mouseout", function() {
+  button.style.cssText = originalButton;
+}); */
+
+
+
+function signUp() {
+  window.location.href = "../sign-up/sign-up.html";
+}

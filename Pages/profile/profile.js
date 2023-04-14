@@ -76,6 +76,42 @@ primeiroDropdown.onchange = function() {
   }
 }
 
+/* function showNames() {
+  const names = ["NICKNAME", "CLASS", "LV"];
+  const namesDiv = document.getElementsByTagName("h2")[0];
+
+  for (let i = 0; i < 3; i++) {
+    const namePara = document.createElement("p");
+    namePara.textContent = names[i];
+    namesDiv.appendChild(namePara);
+  }
+} 
+
+window.onload = function() {
+  setTimeout(showNames, 1000);
+}; */
+
+function showMainInformations() {
+  const informations = ["NICKNAME", "CLASS", "LV"];
+  const informationsH2 = document.getElementsByTagName("h2")[0];
+  let index = 0;
+
+  const intervalId = setInterval(() => {
+    const informationsTo = document.createElement("p");
+    informationsTo.textContent = informations[index];
+    informationsH2.appendChild(informationsTo);
+    index++;
+
+    if (index >= informations.length) {
+      clearInterval(intervalId);
+    }
+  }, 500);
+}
+
+window.onload = function() {
+  showMainInformations();
+};
+
 
 
 
