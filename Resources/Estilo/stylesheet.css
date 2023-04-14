@@ -1,0 +1,259 @@
+
+/* login-page */
+
+html{
+position: relative;
+width: 360px;
+height: 800px;
+font-family: 'Cinzel Decorative', sans-serif;
+
+/* gray-green */
+
+background: #687A50; }
+
+nav{
+    position: absolute;
+    width: 360px;
+    height: 60px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	background: black;
+    display: flex;
+}
+
+/*
+main {
+    
+}
+*/
+
+/*
+input {
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+} 
+*/
+
+.input-login {
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 52px;
+    top: 295px;
+    margin-left: 30px;
+}
+
+.input-password {
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 52px;
+    top: 342px;
+    margin-left: 30px;
+}
+
+.input-email {
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 52px;
+    top: 342px;
+    margin-left: 30px;
+}
+
+.input-password-sign-up {
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 52px;
+    top: 389px;
+    margin-left: 30px;
+}
+
+.input-confirm-password {
+    position: absolute;
+    width: 255px;
+    height: 30px;
+    left: 52px;
+    top: 436px;
+    margin-left: 30px;
+}
+
+input::placeholder {
+    font-family: Cinzel Decorative;
+    color: black;
+    font-weight: bold;
+}
+
+.login-button {
+    position: absolute;
+    width: 71px;
+    height: 37px;
+    left: 144px;
+    top: 400px;
+}
+
+.sign-up-button {
+    position: absolute;
+    width: 81px;
+    height: 37px;
+    left: 139px;
+    top: 498px;
+}
+
+footer {
+    position: absolute;
+    width: 360px;
+    height: 40px;
+    left: 0px;
+    top: 760px;
+    background: black;
+}
+
+.icons-footer {
+    margin-left: 125px;
+    margin-top: 14px;
+}
+
+footer a {
+    padding-left: 1em;
+}
+
+.home-icon {
+    margin-top: 9px;
+    margin-left: 9px;
+}
+
+.menu-icon {
+    margin-top: 9px;
+    margin-left: 19px;
+}
+
+h1 {
+    color: #687A50;
+    font-size: 20px;
+    margin: 1em;
+    margin-left: 40px;
+}
+
+/* home-page */
+
+.information-box {
+    position: absolute;
+    width: 327px;
+    height: 159px;
+    left: 16px;
+    top: 90px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.information-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+.large-information-box {
+    position: absolute;
+    width: 327px;
+    height: 447px;
+    left: 15px;
+    top: 281px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.large-information-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 1em;
+
+    color: #FFFFFF;
+}
+
+/* profile */
+
+.profile-box {
+    position: absolute;
+    width: 327px;
+    height: 144px;
+    left: 16px;
+    top: 77px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+.profile-icon {
+    position: absolute;
+    left: 15.29%;
+    right: 61.72%;
+    top: 23.61%;
+    bottom: 24.19%;
+}
+
+h2 {
+    position: relative;
+    left: 20%;
+    right: 8.87%;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 21px;
+
+    color: #FFFFFF;
+}
+
+.lifeskills-box {
+    position: absolute;
+    width: 327px;
+    height: 450px;
+    left: 16px;
+    top: 241px;
+
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+h3 {
+    position: relative;
+    left: 25px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  
+    color: #FFFFFF;
+}
+
+#primeiroDropdown {
+    position: relative;
+    width: 125px;
+    height: 22px;
+    left: 150px;
+}
+
+#containerSegundoDropdown {
+    position: relative;
+    width: 125px;
+    height: 22px;
+    left: 276px;
+    top: -22px;
+}
