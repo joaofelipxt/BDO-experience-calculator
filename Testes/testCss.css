@@ -5,7 +5,7 @@ html {
 
   /* gray-green */
 
-  background: #687a50;
+  background-color: #687a50;
 }
 
 /* nav{
@@ -19,12 +19,21 @@ html {
         display: flex;
     } */
 
-/*
-    main {
-        
-    }
-    */
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #687a50;
+}
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #2b3035;
+  padding: 10px;
+}
 /*
     input {
         border-top-right-radius: 15px;
@@ -32,7 +41,7 @@ html {
     } 
     */
 
-.input-login {
+/*.input-login {
   position: absolute;
   width: 255px;
   height: 30px;
@@ -104,16 +113,112 @@ input::placeholder {
   height: 37px;
   left: 139px;
   top: 498px;
+} */
+
+                                           /*.input-login {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  top: 30%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#singUp-btn
-
-footer {
-  background: #2b3035;
-  bottom: 0;
-  height: 40px;
+.input-password {
   position: absolute;
-  width: 100%;
+  width: 80%;
+  height: 5%;
+  top: 38%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-email {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  left: 10%;
+  top: 38%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-password-sign-up {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  left: 10%;
+  top: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-confirm-password {
+  position: absolute;
+  width: 80%;
+  height: 5%;
+  left: 10%;
+  top: 52%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  font-family: Cinzel Decorative;
+  color: black;
+  font-weight: bold;
+}
+
+.login-button {
+  position: absolute;
+  width: 15%;
+  height: 5%;
+  left: 47%;
+  top: 55%;
+}
+
+.btn {
+  background-color: black;
+  color: #687a50;
+  font-family: Cinzel Decorative;
+  font-weight: bold;
+}
+
+.sign-up-button {
+  position: absolute;
+  width: 18%;
+  height: 5%;
+  left: 47%;
+  top: 70%;
+}  */
+
+.login-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  background-color: #687a50;
+  margin-bottom: 0;
+  font-family: Cinzel Decorative;
+}
+
+li {
+  text-align: center;
+  margin: 10px 0;
+}
+
+#singUp-btn footer {
+  background: #2b3035;
+  padding: 20px;
 }
 
 .icons-footer {
