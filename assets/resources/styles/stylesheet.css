@@ -217,6 +217,26 @@ footer {
   font-family: Cinzel Decorative;
 }
 
+.form-input > * {
+  margin-bottom: 15px;
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:focus:valid {
+  border-color: green;
+}
+
+input:focus:invalid {
+  border-color: red;
+}
+
 input:focus {
   outline: none;
 }

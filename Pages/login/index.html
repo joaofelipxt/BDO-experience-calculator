@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BDOCalculator</title>
-    <link rel="stylesheet" href="../../Resources/Estilo/stylesheet.css" />
+    <link rel="stylesheet" href="../../assets/resources/styles/stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cinzel+Decorative"
@@ -26,7 +26,7 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../../Resources/Icons/bdo.svg" alt="BDO" />
+          <img src="../../assets/resources/icons/bdo.svg" alt="BDO" />
         </a>
         <button
           class="navbar-toggler"
@@ -74,8 +74,8 @@
   <body>
     <div class="content">
       <main>
-        <ul class="form-input">
-          <li>
+        <form id="miau" onsubmit="return validarLogin()">
+          <div class="form-input">
             <div class="input-login">
               <input
                 type="text"
@@ -84,8 +84,6 @@
                 placeholder="Login"
               />
             </div>
-          </li>
-          <li>
             <div class="input-password">
               <input
                 type="password"
@@ -94,25 +92,18 @@
                 placeholder="Password"
               />
             </div>
-          </li>
-          <li>
             <div class="login-button">
               <button
                 class="btn btn-dark"
-                class="btn"
                 id="login-btn"
-                type="button"
-                onclick="login()"
+                type="submit"
               >
                 LOGIN
               </button>
             </div>
-          </li>
-          <li>
             <div class="sign-up-button">
               <button
                 class="btn btn-dark"
-                class="btn"
                 id="signUp-btn"
                 type="button"
                 onclick="signUp()"
@@ -120,22 +111,22 @@
                 SIGN UP
               </button>
             </div>
-          </li>
-        </ul>
+          </div>
+        </form>
       </main>
       <script src="login.js"></script>
-      <script src="../../Resources/Util/util.js"></script>
+      <script src="../../assets/resources/util/util.js"></script>
     </div>
     <footer>
       <div class="icons-footer">
         <a href="">
-          <img src="../../Resources/Icons/discord.svg" alt="Discord" />
+          <img src="../../assets/resources/icons/discord.svg" alt="Discord" />
         </a>
         <a href="">
-          <img src="../../Resources/Icons/youtube.svg" alt="Youtube" />
+          <img src="../../assets/resources/icons/youtube.svg" alt="Youtube" />
         </a>
         <a href="">
-          <img src="../../Resources/Icons/twitter.svg" alt="Twitter" />
+          <img src="../../assets/resources/icons/twitter.svg" alt="Twitter" />
         </a>
       </div>
     </footer>

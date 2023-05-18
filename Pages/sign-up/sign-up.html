@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BDOCalculator</title>
-    <link rel="stylesheet" href="../../Resources/Estilo/stylesheet.css" />
+    <link rel="stylesheet" href="../../assets/resources/styles/stylesheet.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Cinzel+Decorative"
@@ -26,7 +26,7 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../../Resources/Icons/bdo.svg" alt="BDO" />
+          <img src="../../assets/resources/icons/bdo.svg" alt="BDO" />
         </a>
         <button
           class="navbar-toggler"
@@ -74,77 +74,80 @@
   <body>
     <div class="content">
       <main>
-        <ul class="form-input">
-          <li>
+        <form onsubmit="return signUp(event)">
+          <div class="form-input">
             <div class="input-login">
               <input
                 type="text"
                 id="nickname"
                 name="caixa-de-texto"
                 placeholder="Login"
+                required
+                oninvalid="setCustomValidity('Por favor, preencha este campo com seu login.')"
+                onchange="setCustomValidity('')"
               />
             </div>
-          </li>
-          <li>
             <div class="input-email">
               <input
-                type="text"
+                type="email"
                 id="email"
                 name="caixa-de-texto"
                 placeholder="E-mail"
+                required
+                oninvalid="setCustomValidity('Por favor, insira um endereço de e-mail válido.')"
+                onchange="setCustomValidity('')"
               />
             </div>
-          </li>
-          <li>
             <div class="input-password-sign-up">
               <input
                 type="password"
                 id="password-sign-up"
                 name="password-box"
                 placeholder="Password"
+                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$"
+                required
+                oninvalid="setCustomValidity('A senha deve conter pelo menos um dígito, uma letra minúscula, uma letra maiúscula e ter no mínimo 6 caracteres.')"
+                onchange="setCustomValidity('')"
               />
             </div>
-          </li>
-          <li>
             <div class="input-confirm-password">
               <input
                 type="password"
                 id="confirm-password"
                 name="confirm-password-box"
                 placeholder="Confirm Password"
+                required
+                onchange="validarSenhas()"
               />
             </div>
-          </li>
-          <li>
+            <div id="mensagem-senhas" class="mensagem"></div>
             <div class="sign-up-button">
               <button
                 class="btn btn-dark"
-                class="btn"
                 id="signUp-btn"
-                type="button"
-                onclick="signUp()"
+                type="submit"
               >
                 SIGN UP
               </button>
             </div>
-          </li>
-        </ul>
+          </div>
+        </form>
       </main>
     </div>
     <footer>
       <div class="icons-footer">
         <a href="">
-          <img src="../../Resources/Icons/discord.svg" alt="Discord" />
+          <img src="../../assets/resources/icons/discord.svg" alt="Discord" />
         </a>
         <a href="">
-          <img src="../../Resources/Icons/youtube.svg" alt="Youtube" />
+          <img src="../../assets/resources/icons/youtube.svg" alt="Youtube" />
         </a>
         <a href="">
-          <img src="../../Resources/Icons/twitter.svg" alt="Twitter" />
+          <img src="../../assets/resources/icons/twitter.svg" alt="Twitter" />
         </a>
       </div>
     </footer>
     <script src="sign-up.js"></script>
-    <script src="../../Resources/Util/util.js"></script>
+    <script src="../../assets/resources/util/util.js"></script>
   </body>
 </html>

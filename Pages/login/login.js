@@ -1,15 +1,34 @@
-function login() {
-    // Obter os valores inseridos pelo usuário
-    const nickname = document.getElementById("nickname").value;
-    const password = document.getElementById("password").value;
-  
-    // Verificar se as credenciais são válidas
-    if (nickname === "Zooao" && password === "web2") {
-      alert("Login bem-sucedido!");
-      window.location.href = "../home-page/home.html";
-    } else {
-      alert("Nome de usuário ou senha inválidos. Tente novamente.");
-    }
+"use strict";
+
+function validarLogin() {
+  let nickname = document.getElementById("nickname").value;
+  let password = document.getElementById("password").value;
+
+  // Verificar se os campos estão vazios
+  if (nickname === "" || password === "") {
+    alert("Por favor, preencha todos os campos!");
+    return false;
+  }
+
+  // Verificar o formato do campo de senha
+  if (!validarFormatoSenha(password)) {
+    alert(
+      "A senha deve ter pelo menos 6 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula e um número!"
+    );
+    return false;
+  }
+
+  // Todas as validações passaram, permitir o envio do formulário
+  document.forms[0].submit(); // Envia o formulário
+  window.location.href = "../home-page/home.html";
+  return false;
+}
+
+function validarFormatoSenha(password) {
+  // Regex para verificar o formato da senha
+  var formatoSenha = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{6,}$/;
+
+  return formatoSenha.test(password);
 }
 
 /* const button = document.getElementById("login-btn");
@@ -23,31 +42,27 @@ button.addEventListener("mouseout", function() {
   button.style.cssText = originalButton;
 }); */
 
-
-
 function signUp() {
   window.location.href = "../sign-up/sign-up.html";
 }
 
-
 function exibirMensagem() {
-  const confirma = confirm("Welcome to your Black Desert Calculator! You must be at least 12 years old to use this site.");
+  const confirma = confirm(
+    "Welcome to your Black Desert Calculator! You must be at least 12 years old to use this site."
+  );
 
   if (confirma) {
     const age = prompt("How old are you?");
     if (age >= 12) {
       alert("Enjoy!");
-    }
-    else {
+    } else {
       alert("Sorry, you must be at least 12 years old to use this site.");
       window.location.href = "";
     }
-  } 
-  else {
+  } else {
     alert("You need to confirm your age!");
     window.location.href = "";
   }
 }
 
 setTimeout(exibirMensagem, 750);
-

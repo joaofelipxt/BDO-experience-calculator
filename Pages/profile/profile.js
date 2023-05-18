@@ -1,3 +1,5 @@
+"use strict";
+
 const primeiroDropdown = document.getElementById("primeiroDropdown");
 
 // seleciona o container do segundo dropdown

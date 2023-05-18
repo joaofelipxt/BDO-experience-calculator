@@ -1,15 +1,51 @@
-function signUp() {
-    const password = document.getElementsByName("password-box")[0].value;
-    const confirmPassword = document.getElementsByName("confirm-password-box")[0].value;
+"use strict";
 
+/*function signUp() {
+  if (!validarSenhas()) {
+    return false;
+  }
 
-    if (confirm("Are you sure you want to sign-up?")) {
-        if (password === confirmPassword) {
-            alert("You have signed up successfully");
-            window.location.href = "../home-page/home.html";
-        }
-        else {
-            alert("The passwords don't match. Please try again");
-        }
+  window.location.href = "../home-page/home.html";
+  return false;
+} 
+
+function validarSenhas() {
+  const senha = document.getElementById("password-sign-up").value;
+  const confirmSenha = document.getElementById("confirm-password").value;
+  const mensagemSenhas = document.getElementById("mensagem-senhas");
+
+  if (senha !== confirmSenha) {
+    mensagemSenhas.textContent = "As senhas não são iguais.";
+    mensagemSenhas.style.color = "red";
+    mensagemSenhas.style.fontWeight = "bold";
+    return false;
+  } else {
+    mensagemSenhas.textContent = "";
+    return true;
+  }
+} */
+
+function signUp(event) {
+    if (!validarSenhas()) {
+      exibirMensagemSenhaIncorreta();
+      event.preventDefault();
+    } else {
+      setTimeout(function() {
+        window.location.href = "../home-page/home.html";
+      }, 0);
     }
-}
+  }
+  
+  function validarSenhas() {
+    const senha = document.getElementById("password-sign-up").value;
+    const confirmSenha = document.getElementById("confirm-password").value;
+  
+    return senha === confirmSenha;
+  }
+  
+  function exibirMensagemSenhaIncorreta() {
+    const mensagemSenhas = document.getElementById("mensagem-senhas");
+    mensagemSenhas.textContent = "As senhas não são iguais.";
+    mensagemSenhas.style.color = "red";
+    mensagemSenhas.style.fontWeight = "bold";
+  }
