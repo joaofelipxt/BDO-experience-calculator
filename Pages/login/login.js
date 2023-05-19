@@ -42,6 +42,17 @@ button.addEventListener("mouseout", function() {
   button.style.cssText = originalButton;
 }); */
 
+function togglePasswordVisibility() {
+  const passwordInput = document.getElementById("password");
+  const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+
+  if (showPasswordCheckbox.checked) {
+    passwordInput.type = "text";
+  } else {
+    passwordInput.type = "password";
+  }
+}
+
 function signUp() {
   window.location.href = "../sign-up/sign-up.html";
 }
