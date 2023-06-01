@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /*function signUp() {
   if (!validarSenhas()) {
@@ -37,15 +37,15 @@ function signUp(event) {
   }
   
   function validarSenhas() {
-    const senha = document.getElementById("password-sign-up").value;
-    const confirmSenha = document.getElementById("confirm-password").value;
+    const senha = document.getElementById('password-sign-up').value;
+    const confirmSenha = document.getElementById('confirm-password').value;
   
     return senha === confirmSenha;
   }
   
   function exibirMensagemSenhaIncorreta() {
-    const mensagemSenhas = document.getElementById("mensagem-senhas");
-    mensagemSenhas.textContent = "As senhas não são iguais.";
-    mensagemSenhas.style.color = "red";
-    mensagemSenhas.style.fontWeight = "bold";
+    const mensagemSenhas = document.getElementById('mensagem-senhas');
+    mensagemSenhas.textContent = 'As senhas não são iguais.';
+    mensagemSenhas.style.color = 'red';
+    mensagemSenhas.style.fontWeight = 'bold';
   }

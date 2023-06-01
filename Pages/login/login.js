@@ -1,19 +1,19 @@
-"use strict";
+'use strict';
 
 function validarLogin() {
-  let nickname = document.getElementById("nickname").value;
-  let password = document.getElementById("password").value;
+  let nickname = document.getElementById('nickname').value;
+  let password = document.getElementById('password').value;
 
   // Verificar se os campos estão vazios
-  if (nickname === "" || password === "") {
-    alert("Por favor, preencha todos os campos!");
+  if (nickname === '' || password === '') {
+    alert('Por favor, preencha todos os campos!');
     return false;
   }
 
   // Verificar o formato do campo de senha
   if (!validarFormatoSenha(password)) {
     alert(
-      "A senha deve ter pelo menos 6 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula e um número!"
+      'A senha deve ter pelo menos 6 caracteres e conter pelo menos uma letra maiúscula, uma letra minúscula e um número!'
     );
     return false;
   }
@@ -43,13 +43,13 @@ button.addEventListener("mouseout", function() {
 }); */
 
 function togglePasswordVisibility() {
-  const passwordInput = document.getElementById("password");
-  const showPasswordCheckbox = document.getElementById("showPasswordCheckbox");
+  const passwordInput = document.getElementById('password');
+  const showPasswordCheckbox = document.getElementById('showPasswordCheckbox');
 
   if (showPasswordCheckbox.checked) {
-    passwordInput.type = "text";
+    passwordInput.type = 'text';
   } else {
-    passwordInput.type = "password";
+    passwordInput.type = 'password';
   }
 }
 
@@ -59,19 +59,19 @@ function signUp() {
 
 function exibirMensagem() {
   const confirma = confirm(
-    "Welcome to your Black Desert Calculator! You must be at least 12 years old to use this site."
+    'Welcome to your Black Desert Calculator! You must be at least 12 years old to use this site.'
   );
 
   if (confirma) {
-    const age = prompt("How old are you?");
+    const age = prompt('How old are you?');
     if (age >= 12) {
-      alert("Enjoy!");
+      alert('Enjoy!');
     } else {
-      alert("Sorry, you must be at least 12 years old to use this site.");
+      alert('Sorry, you must be at least 12 years old to use this site.');
       window.location.href = "";
     }
   } else {
-    alert("You need to confirm your age!");
+    alert('You need to confirm your age!');
     window.location.href = "";
   }
 }

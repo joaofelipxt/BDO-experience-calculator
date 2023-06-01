@@ -1,20 +1,20 @@
-"use strict";
+'use strict';
 
-const primeiroDropdown = document.getElementById("primeiroDropdown");
+const primeiroDropdown = document.getElementById('primeiroDropdown');
 
 // seleciona o container do segundo dropdown
-const containerSegundoDropdown = document.getElementById("containerSegundoDropdown");
+const containerSegundoDropdown = document.getElementById('containerSegundoDropdown');
 
 function criarOpcoesSegundoDropdown(opcoes) {
   // limpa o container do segundo dropdown
   containerSegundoDropdown.innerHTML = "";
 
   // cria o segundo dropdown
-  const segundoDropdown = document.createElement("select");
+  const segundoDropdown = document.createElement('select');
 
   // itera sobre as opções e cria uma opção para cada uma
   for (let i = 0; i < opcoes.length; i++) {
-    const opcao = document.createElement("option");
+    const opcao = document.createElement('option');
     opcao.value = opcoes[i].valor;
     opcao.text = opcoes[i].nome;
     segundoDropdown.appendChild(opcao);
@@ -40,12 +40,12 @@ criarOpcoesSegundoDropdown(opcoesNomeadas);
 // adiciona evento onchange para detectar quando o usuário selecionar uma opção
 primeiroDropdown.onchange = function() {
   // verifica se a opção "opcao1" foi selecionada
-  if (primeiroDropdown.value === "opcao1") {
+  if (primeiroDropdown.value === 'opcao1') {
     // cria as opções do segundo dropdown
     criarOpcoesSegundoDropdown(opcoesNomeadas);
   }
   // verifica se a opção "opcao2" foi selecionada
-  else if (primeiroDropdown.value === "opcao2") {
+  else if (primeiroDropdown.value === 'opcao2') {
     // cria as opções do segundo dropdown com números de 1 a 30
 
     const opcoes2 = [];
@@ -61,7 +61,7 @@ primeiroDropdown.onchange = function() {
     criarOpcoesSegundoDropdown(opcoes2Nomeadas);
   }
 
-  else if(primeiroDropdown.value === "opcao3") {
+  else if(primeiroDropdown.value === 'opcao3') {
     // cria as opções do terceiro dropdown com números de 1 a 50
 
     const opcoes3 = [];
@@ -94,7 +94,7 @@ window.onload = function() {
 }; */
 
 function showMainInformations() {
-  const informations = ["NICKNAME", "CLASS", "LV"];
+  const informations = ['NICKNAME', 'CLASS', 'LV'];
   const informationsH2 = document.getElementsByTagName("h2")[0];
   let index = 0;
 
